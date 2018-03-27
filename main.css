@@ -1,0 +1,16 @@
+#zoo {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    border: 2px solid black;
+    text-align: center;
+    margin: 2%;
+    
+}
+
+.card-button {
+    margin: 0 auto;
+}

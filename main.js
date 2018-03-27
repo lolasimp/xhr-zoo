@@ -29,3 +29,19 @@ function executeThisCodeAfterFileLoaded(){
     }
 
     startApplication();
+
+    const cardAnimals = (animalArray) => {
+        let domString = '';
+        animalsArray.forEach((animals) => {
+        domString += `<div class="animal">`;
+        domString +=   `<h1>${animals.name}</h1>`;
+        domString +=   `<h3>${animals.number} </h3>`;
+        domString +=   `<img class="animal-image" src="${animals.imageUrl}">`;
+        domString +=   `<div class ="button-container">`;
+        domString +=     `<button>Escaped</button>`;
+        domString +=   `</div>`;
+        domString += `</div>`;
+        });
+        printToDom(domString, 'zoo');
+    }
+    
