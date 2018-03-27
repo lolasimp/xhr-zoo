@@ -5,14 +5,14 @@
             "type": "Amphibian",
             "number": 21,
             "isCarnivore": true,
-            "imageUrl": "https://www.nashvillezoo.org/assets/2147/12_frogs.jpg",
+            "imageUrl": "https://www.nashvillezoo.org/assets/2147/12_frogs.jpg"
         },
         {
             "name":"Alpaca",
             "type": "Mammal",
             "number":22,
             "isCarnivore": false,
-            "imageUrl": "https://www.nashvillezoo.org/assets/2147/12_alpaca1.jpg",
+            "imageUrl": "https://www.nashvillezoo.org/assets/2147/12_alpaca1.jpg"
 
         },
         {
@@ -20,105 +20,105 @@
             "type": "Mammal",
             "number": 10,
             "isCarnivore": false,
-            "imageUrl": "https://www.nashvillezoo.org/assets/2147/12_bontebok-sq.jpg",
+            "imageUrl": "https://www.nashvillezoo.org/assets/2147/12_bontebok-sq.jpg"
         },
         {
             "name":"CLOUDED LEOPARD",
             "type": "Mammal",
             "number":5 ,
             "isCarnivore": true,
-            "imageUrl": "https://www.nashvillezoo.org/assets/2147/12_cloudedleopard7.jpg",
+            "imageUrl": "https://www.nashvillezoo.org/assets/2147/12_cloudedleopard7.jpg"
         },
         {
             "name":"ALDABRA TORTOISE",
             "type": "Reptile",
             "number":8,
             "isCarnivore": false,
-            "imageUrl": "https://www.nashvillezoo.org/assets/2147/12_koraline_-_aldabra_-_katie_gregory.jpg",
+            "imageUrl": "https://www.nashvillezoo.org/assets/2147/12_koraline_-_aldabra_-_katie_gregory.jpg"
         },
         {
             "name":"Alligator Snapping Turtle",
             "type": "Reptile",
             "number": 10,
             "isCarnivore": true,
-            "imageUrl": "https://www.nashvillezoo.org/assets/2147/12_alligator-snapping-turtle.jpg",
+            "imageUrl": "https://www.nashvillezoo.org/assets/2147/12_alligator-snapping-turtle.jpg"
         },
         {
             "name":"Dwarf Caiman",
             "type": "Reptile",
             "number": 20,
             "isCarnivore": true,
-            "imageUrl": "https://www.nashvillezoo.org/assets/2147/12_dwarf_caiman_-_sperka.jpg",
+            "imageUrl": "https://www.nashvillezoo.org/assets/2147/12_dwarf_caiman_-_sperka.jpg"
         },
         {
             "name":"Galapogos Turtle",
             "type": "Reptile",
             "number": 8,
             "isCarnivore": false,
-            "imageUrl": "https://www.nashvillezoo.org/assets/2147/tortoise6.jpg",
+            "imageUrl": "https://www.nashvillezoo.org/assets/2147/tortoise6.jpg"
         },
         {
             "name":"ANDEAN GOOSE",
             "type": "Bird",
             "number": 16,
             "isCarnivore":false,
-            "imageUrl": "https://www.nashvillezoo.org/assets/2147/12_andean-geese-web.jpg",
+            "imageUrl": "https://www.nashvillezoo.org/assets/2147/12_andean-geese-web.jpg"
         },
         {
             "name":"Capercallie",
             "type": "Bird",
             "number":8 ,
             "isCarnivore": false,
-            "imageUrl": "https://www.nashvillezoo.org/assets/2147/capercallie-web.jpg",
+            "imageUrl": "https://www.nashvillezoo.org/assets/2147/capercallie-web.jpg"
         },
         {
             "name":"Carribean Flamingos",
             "type": "Bird",
             "number": 25,
             "isCarnivore":true,
-            "imageUrl": "https://www.nashvillezoo.org/assets/2147/12_flamingo9.jpg",
+            "imageUrl": "https://www.nashvillezoo.org/assets/2147/12_flamingo9.jpg"
         },
         {
             "name":"Cassowary",
             "type": "Brid",
             "number": 9,
             "isCarnivore":true,
-            "imageUrl": "https://www.nashvillezoo.org/assets/2147/cassowary8.jpg",
+            "imageUrl": "https://www.nashvillezoo.org/assets/2147/cassowary8.jpg"
         },
         {
             "name":"Lorikeet",
             "type": "Bird",
             "number": 17,
             "isCarnivore": false,
-            "imageUrl": "https://www.nashvillezoo.org/assets/2147/12_lorikeet8.jpg",
+            "imageUrl": "https://www.nashvillezoo.org/assets/2147/12_lorikeet8.jpg"
         },
         {
             "name":"Cougar",
             "type": "Mammal",
             "number": 8,
             "isCarnivore": true,
-            "imageUrl": "https://www.nashvillezoo.org/assets/2147/12_cougar5.jpg",
+            "imageUrl": "https://www.nashvillezoo.org/assets/2147/12_cougar5.jpg"
         },
         {
             "name":"Enland",
             "type": "Mammal",
             "number": 9,
             "isCarnivore": false,
-            "imageUrl": "https://www.nashvillezoo.org/assets/2147/12_eland1.jpg",
+            "imageUrl": "https://www.nashvillezoo.org/assets/2147/12_eland1.jpg"
         },
         {
             "name":"African Clawed Frog",
             "type": "Amphibians",
             "number": 10,
             "isCarnivore": false,
-            "imageUrl": "https://www.nashvillezoo.org/assets/2147/12_african-clawed-frog-web.jpg",
+            "imageUrl": "https://www.nashvillezoo.org/assets/2147/12_african-clawed-frog-web.jpg"
         },
         {
             "name":"AXOLOTL",
             "type": "Amphibians",
             "number": 7,
             "isCarnivore": true,
-            "imageUrl": "https://www.nashvillezoo.org/assets/2147/12_axolotl-web.jpg",
+            "imageUrl": "https://www.nashvillezoo.org/assets/2147/12_axolotl-web.jpg"
 
         }
     ]
