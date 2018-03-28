@@ -4,13 +4,14 @@
     justify-content: center;
 }
 
-.card {
+.animals {
     border: 2px solid black;
     text-align: center;
     margin: 2%;
-    
+    width: 400px;
+
 }
 
-.card-button {
+.escaped {
     margin: 0 auto;
 }

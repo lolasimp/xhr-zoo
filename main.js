@@ -15,10 +15,45 @@ const buildDomString = (theArray) => {
     })
     
 };
+const cardAnimals = (animalArray) => {
+    let domString = '';
+    animalsArray.forEach((animals) => {
+        if(animals.isCarnivore) {
+            domString += `<div class = "animal carnivore">`
+        }
+    domString += `<div class="animal">`;
+    domString +=   `<h1>${animals.name}</h1>`;
+    domString +=   `<h3>${animals.number} </h3>`;
+    domString +=   `<img class="animal-image" src="${animals.imageUrl}">`;
+    domString +=   `<div class ="button-container">`;
+    domString +=     `<button class="escaped">Escaped</button>`;
+    domString +=   `</div>`;
+    domString += `</div>`;
+    });
+    printToDom(domString, 'zoo');
+}
+
+const addEscapedEventListeners = () => {
+    const escapedButtons = document.getElementsByClassName("escaped");
+
+    for (let i = 0; i < escapedButtons.length; i++) {
+        escapedButtons[i].addEventListener('click', animalsEscaped)
+    }
+    // animalsEscaped();
+};
+
+const animalsEscaped = () => {
+    showCanivores();
+    showVegetables()
+};
+
+const showCanivores = () => {};
+const showVegetables = ()=> {};
 
 function executeThisCodeAfterFileLoaded(){
     const data = JSON.parse(this.responseText);
     buildDomString (data.animals);
+    addEscapedEventListeners(); 
     }
     const startApplication = () => {
         let myRequest = new XMLHttpRequest();
@@ -29,19 +64,6 @@ function executeThisCodeAfterFileLoaded(){
     }
 
     startApplication();
+    
 
-    const cardAnimals = (animalArray) => {
-        let domString = '';
-        animalsArray.forEach((animals) => {
-        domString += `<div class="animal">`;
-        domString +=   `<h1>${animals.name}</h1>`;
-        domString +=   `<h3>${animals.number} </h3>`;
-        domString +=   `<img class="animal-image" src="${animals.imageUrl}">`;
-        domString +=   `<div class ="button-container">`;
-        domString +=     `<button>Escaped</button>`;
-        domString +=   `</div>`;
-        domString += `</div>`;
-        });
-        printToDom(domString, 'zoo');
-    }
     
