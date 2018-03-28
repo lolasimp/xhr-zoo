@@ -3,10 +3,6 @@ const printToDom = (domString, divId) => {
     document.getElementById(divId).innerHTML += domString;
 }
 
-function executeThisCodeifXHRFails(){
-    console.log("This is wrong");
-}
-
 const buildDomString = (theArray) => {
     theArray.forEach((animals) => {
     let domString = "";
@@ -15,13 +11,14 @@ const buildDomString = (theArray) => {
     })
     
 };
-const cardAnimals = (animalArray) => {
+const cardAnimals = (animalsArray) => {
     let domString = '';
     animalsArray.forEach((animals) => {
         if(animals.isCarnivore) {
-            domString += `<div class = "animal carnivore">`
+            domString += `<div class = "animal carnivore">`;
+        } else{
+            domString += `<div class = "animal vegetables">`;
         }
-    domString += `<div class="animal">`;
     domString +=   `<h1>${animals.name}</h1>`;
     domString +=   `<h3>${animals.number} </h3>`;
     domString +=   `<img class="animal-image" src="${animals.imageUrl}">`;
@@ -47,13 +44,30 @@ const animalsEscaped = () => {
     showVegetables()
 };
 
-const showCanivores = () => {};
-const showVegetables = ()=> {};
+const showCanivores = () => {
+    const carnivores = document.getElementsByClassName('carnivore');
+    for (let j = 0; j < carnivores.length; j++){
+        carnivores[j].children[3].innerHTML = " ";
+        carnivores[j].classList.add('red');
+        }
+    };
+
+const showVegetables = ()=> {
+    const vegetables = document.getElementsByClassName('vegetables');
+    for (let q = 0; q < vegetables.length; q++) {
+        vegetables[q].children[3].innerHTML = "";
+        vegetables[q].classList.add('green');
+    }
+};
 
 function executeThisCodeAfterFileLoaded(){
     const data = JSON.parse(this.responseText);
-    buildDomString (data.animals);
+    cardAnimals (data.animals);
     addEscapedEventListeners(); 
+    }
+
+    function executeThisCodeifXHRFails(){
+        console.log("This is wrong");
     }
     const startApplication = () => {
         let myRequest = new XMLHttpRequest();
