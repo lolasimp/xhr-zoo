@@ -39,9 +39,28 @@ const addEscapedEventListeners = () => {
     // animalsEscaped();
 };
 
-const animalsEscaped = () => {
+const animalsEscaped = (e) => {
+   const badAnimalButtonContainer = e.target.parentNode;
     showCanivores();
-    showVegetables()
+    showVegetables();
+    showFoundButton(badAnimalButtonContainer);
+};
+const showFoundButton = (buttonContainder) => {
+    buttonContainder.innerHTML = `<button id= "found">Found</button>`;
+    initalizeFoundButton();
+};
+
+const initalizeFoundButton = () => {
+    const foundButton = document.getElementById('found');
+    foundButton.addEventListener('click', () => {
+        const animals = document.getElementsByClassName('animal');
+        for(let m=0; m<animals.length; m++){
+            animals[m].children[3].innerHTML = `<button class ="escaped">Escaped</buttons>`;
+            animals[m].classList.remove('red');
+            animals[m].classList.remove('green');
+        }
+        addEscapedEventListeners();
+    });
 };
 
 const showCanivores = () => {
