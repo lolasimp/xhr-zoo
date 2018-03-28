@@ -71,12 +71,27 @@ const showCanivores = () => {
         }
     };
 
+const initalizeEatMeButtons = () => {
+    const eatMeButtons = document.getElementsByClassName('eat-me');
+    for (let n = 0; n < eatMeButtons.length; n++){
+        eatMeButtons[n].addEventListener('click', itsAlreadyBeenEaten);
+    }
+};
+
+const itsAlreadyBeenEaten = (e) => {
+ const currentNumber = e.target.parentNode.parentNode.children[1].innerHTML;
+ const newNumber = currentNumber *1 -1;
+ e.target.parentNode.parentNode.children[1].innerHTML = newNumber;
+//  can be currentNumber = newNumber;
+};
+
 const showVegetables = ()=> {
     const vegetables = document.getElementsByClassName('vegetables');
     for (let q = 0; q < vegetables.length; q++) {
-        vegetables[q].children[3].innerHTML = `<button>EAT ME!!!</button>`;
+        vegetables[q].children[3].innerHTML = `<button class="eat-me">EAT ME!!!</button>`;
         vegetables[q].classList.add('green');
     }
+    initalizeEatMeButtons();
 };
 
 function executeThisCodeAfterFileLoaded(){
