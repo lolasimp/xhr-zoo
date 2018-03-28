@@ -55,7 +55,7 @@ const showCanivores = () => {
 const showVegetables = ()=> {
     const vegetables = document.getElementsByClassName('vegetables');
     for (let q = 0; q < vegetables.length; q++) {
-        vegetables[q].children[3].innerHTML = "";
+        vegetables[q].children[3].innerHTML = `<button>EAT ME!!!</button>`;
         vegetables[q].classList.add('green');
     }
 };
